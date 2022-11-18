@@ -1,0 +1,242 @@
+html,
+* {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+
+
+header {
+    background-color: #1b1b1b;
+    position: relative;
+    min-height: 300px;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.nav-list>li>a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.nav-list>li>a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    width: 850px;
+    margin: 0 auto;
+}
+
+.profile>img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid;
+    box-shadow: 0px 2px 6px 0px #00000036;
+}
+
+.info>h1 {
+    text-transform: capitalize;
+}
+
+.info>p::first-letter {
+    text-transform: uppercase;
+}
+
+.mark {
+    text-transform: capitalize;
+    color: cornflowerblue;
+}
+
+.info>ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.info>ul>li>a {
+    color: white;
+}
+
+.info>ul>li>a:hover {
+    color: blue;
+}
+
+
+main {
+    margin: 60px 0px;
+}
+
+section {
+    width: 850px;
+    margin: 30px auto;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+}
+
+.two-columns>div>h3:first-child {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.two-columns>div>h3:first-child::before {
+    content: '';
+    width: 20px;
+    border: 2px solid blue;
+    margin-right: 5px;
+}
+
+#download-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    background-color: #d81616;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    animation: upNdDown .8s linear infinite;
+}
+
+#download-btn:hover {
+    /*animation: none;*/
+    background-color: #d81616;
+}
+
+
+
+
+.overview>ul {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.overview>ul>li:nth-child(2n+1) {
+    color: gray;
+}
+
+.overview>ul>li:nth-child(2n) {
+    margin-bottom: 10px;
+}
+
+.overview>ul>li:nth-child(6) {
+    text-transform: lowercase;
+}
+
+.overview>ul>li:last-child {
+    color: green;
+}
+
+
+.my-projects {
+    border-top: 1px solid;
+}
+
+.my-projects>h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0px;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.project-card {
+    grid-row: 1/3;
+    border: 1px solid #00000026;
+    width: 100%;
+    padding: 5px 5px 10px 5px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    transition: .2s ease-out;
+    overflow: hidden;
+}
+
+.project-card>img {
+    width: inherit;
+    transition: .2s ease-in;
+}
+
+
+.project-card>h5 {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #5016d8;
+    padding-left: 5px;
+    margin: 5px 0px;
+}
+
+.project-card>p {
+    padding-left: 5px;
+}
+
+.project-card>a {
+    float: right;
+    margin: 15px 10px 0px 0px;
+}
+
+
+
+
+.project-card:hover {
+    box-shadow: 0px 2px 6px #00000042;
+    transform: translateY(-5px);
+}
+
+
+.project-card:hover>img {
+    filter: blur(2px);
+}
+
+
+
+
+
+
+
+@keyframes upNdDown {
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
